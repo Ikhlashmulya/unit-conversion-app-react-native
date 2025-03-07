@@ -1,15 +1,35 @@
-import { Text, View } from "react-native";
+import OptionMenu from "@/components/option-menu";
+import { Image, StyleSheet, Text, View } from "react-native";
 
 export default function Index() {
   return (
     <View
-      style={{
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-      }}
+      style={styles.viewScreen}
     >
-      <Text>Edit app/index.tsx to edit this screen.</Text>
+      <Image
+        style={styles.iconImage}
+        source={require("@/assets/images/unit-converter-calculator.png")}
+      />
+      <Text style={styles.textTitle}>Project unit konversi</Text>
+
+      <OptionMenu />
     </View>
   );
 }
+
+const styles = StyleSheet.create({
+  textTitle: {
+    fontWeight: "bold",
+    fontSize: 25,
+  },
+  iconImage: {
+    width: 150,
+    height: 150,
+    marginBottom: 20,
+  },
+  viewScreen: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+  },
+});
