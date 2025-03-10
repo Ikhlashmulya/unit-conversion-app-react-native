@@ -1,10 +1,14 @@
+import { router } from "expo-router";
 import { StyleSheet, View, Pressable, Image, Text } from "react-native";
 
 export default function OptionMenu() {
   return (
     <View id="options" style={styles.options}>
       <View id="option1" style={styles.optionItem}>
-        <Pressable style={styles.cardOption}>
+        <Pressable
+          style={styles.cardOption}
+          onPress={() => router.push(`/temprature`)}
+        >
           <Image
             style={styles.imageOption}
             source={require("@/assets/images/temprature.png")}
@@ -60,7 +64,7 @@ const styles = StyleSheet.create({
   imageOption: {
     width: 65,
     height: 65,
-    marginBottom: 5
+    marginBottom: 5,
   },
   optionItem: {
     flex: 0,
