@@ -16,7 +16,7 @@ type ConversionLayoutProps = {
   options: string[];
   selectedOption: string;
   setSelectedOption: (option: string) => void;
-  result: number;
+  result: string;
   onPressConvert: () => void;
 };
 
