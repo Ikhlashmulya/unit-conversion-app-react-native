@@ -9,25 +9,22 @@ export default function Index() {
   const [result, setResult] = useState("0");
 
   function onPressConvert() {
+    const numericValue = value.replace(/[^0-9.]/g, "");
     switch (selectedOption) {
       case "Cel to Re":
-        const numericValue = value.replace(/[^0-9.]/g, "");
         setResult(`${4/5 * parseFloat(numericValue)}°Ré`);
         break;
 
       case "Cel to Far":
-        const numericValue2 = value.replace(/[^0-9.]/g, "");
-        setResult(`${(9 / 5) * parseFloat(numericValue2) + 32}°F`);
+        setResult(`${(9 / 5) * parseFloat(numericValue) + 32}°F`);
         break;
 
       case "Re to Cel":
-        const numericValue3 = value.replace(/[^0-9.]/g, "");
-        setResult(`${(5 / 4) * parseFloat(numericValue3)}°C`);
+        setResult(`${(5 / 4) * parseFloat(numericValue)}°C`);
         break;
 
       case "Re to Far":
-        const numericValue4 = value.replace(/[^0-9.]/g, "");
-        setResult(`${(9 / 4) * parseFloat(numericValue4) + 32}°F`);
+        setResult(`${(9 / 4) * parseFloat(numericValue) + 32}°F`);
         break;
 
       default:

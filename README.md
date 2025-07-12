@@ -1,4 +1,11 @@
-# Welcome to your Expo app 👋
+# Mata kuliah mobile programming
+
+## Screenshot
+
+![screenshot1](/assets/screenshots/Screenshot1.jpg)
+![screenshot2](/assets/screenshots/Screenshot2.jpg)
+![screenshot4](/assets/screenshots/Screenshot4.jpg)
+![screenshot5](/assets/screenshots/Screenshot5.jpg)
 
 This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
 

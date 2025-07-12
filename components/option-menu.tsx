@@ -15,7 +15,10 @@ export default function OptionMenu() {
           />
           <Text>Suhu</Text>
         </Pressable>
-        <Pressable style={styles.cardOption}>
+        <Pressable
+          style={styles.cardOption}
+          onPress={() => router.push(`/mass`)}
+        >
           <Image
             style={styles.imageOption}
             source={require("@/assets/images/massa.png")}
@@ -25,14 +28,20 @@ export default function OptionMenu() {
       </View>
 
       <View id="option2" style={styles.optionItem}>
-        <Pressable style={styles.cardOption}>
+        <Pressable
+          style={styles.cardOption}
+          onPress={() => router.push(`/area`)}
+        >
           <Image
             style={styles.imageOption}
             source={require("@/assets/images/luas.png")}
           />
           <Text>Luas</Text>
         </Pressable>
-        <Pressable style={styles.cardOption}>
+        <Pressable
+          style={styles.cardOption}
+          onPress={() => router.push(`/length`)}
+        >
           <Image
             style={styles.imageOption}
             source={require("@/assets/images/jarak.png")}
